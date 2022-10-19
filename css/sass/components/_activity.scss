@@ -1,0 +1,46 @@
+.section-activity {
+  padding-top: 0;
+}
+
+.container-activity {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.activity__list {
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 30px;
+  justify-content: center;
+}
+.activity__work {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+}
+
+.activity__group {
+  position: relative;
+}
+
+.activity__text {
+  display: inline;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+}

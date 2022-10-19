@@ -1,0 +1,32 @@
+// Utils styles
+@import "./utils/vars";
+@import "./utils/visually-hidden";
+// Components
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/hero-section";
+@import "./components/modal";
+@import "./components/benefits";
+@import "./components/activity";
+@import "./components/about";
+@import "./components/client";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}

@@ -1,0 +1,115 @@
+.page__header {
+  border-bottom: solid 1px;
+  border-color: var(--color-border);
+}
+
+header {
+  background-color: var(--primary-white-color);
+  display: flex;
+}
+
+.header-contanier {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  display: block;
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color var(--animation);
+}
+
+.nav__link.current {
+  color: var(--active-color);
+  padding: 32px 0;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color var(--animation);
+  position: relative;
+  display: block;
+}
+
+.nav__link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -1%;
+  background-color: var(--active-color);
+}
+
+h2 {
+  text-align: center;
+}
+
+.list-contact__link {
+  fill: var(--second-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  align-items: center;
+  transition: fill var(--animation), color var(--animation);
+  color: var(--second-text-color);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+    fill: var(--active-color);
+  }
+}
+
+.list-contact {
+  margin: 0 0 0 auto;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+.list-contact__item {
+  list-style: none;
+  margin-right: 30px;
+}
+.list-contact__item:last-child {
+  margin-right: 0;
+}
+
+.list-contact__icon {
+  margin-right: 10px;
+}

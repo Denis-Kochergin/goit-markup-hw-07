@@ -1,28 +1,28 @@
-:root {
+/* :root {
   /* Fonts */
 
-  /* Text color */
-  --primary-text-color: #212121;
-  --tittle-text-color: #212121;
-  --accent-color: #2196f3;
-  --active-color: #2196f3;
-  --primary-white-color: #ffffff;
-  --second-text-color: #757575;
+/* Text color
+--primary-text-color: #212121;
+--tittle-text-color: #212121;
+--accent-color: #2196f3;
+--active-color: #2196f3;
+--primary-white-color: #ffffff;
+--second-text-color: #757575;
 
-  /* Background colors */
 
-  --background-color: #f5f4fa;
-  --footer-background-color: #2f303a;
-  --background-color-portfolio: #f5f5f5;
-  --color-border-list: #eeeeee;
-  --background-color-btn: #188ce8;
-  --color-border: #ececec;
-  --social-color: #afb1b8;
-  /*Other */
-  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
 
-html {
+--background-color: #f5f4fa;
+--footer-background-color: #2f303a;
+--background-color-portfolio: #f5f5f5;
+--color-border-list: #eeeeee;
+--background-color-btn: #188ce8;
+--color-border: #ececec;
+--social-color: #afb1b8;
+
+--animation: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+} */
+
+/* html {
   box-sizing: border-box;
 }
 
@@ -32,21 +32,21 @@ html {
   box-sizing: inherit;
 }
 
-/* Остальной код */
+Остальной код
 
-/* Body */
+
 h1,
 h2,
 h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
-body {
+/* body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-}
+} */
 
 .section {
   padding-top: 94px;
@@ -67,7 +67,7 @@ body {
 
 /* Header */
 
-.page-header {
+/* .page-header {
   border-bottom: solid 1px;
   border-color: var(--color-border);
 }
@@ -84,10 +84,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
+} */
 
 /* Logo */
-.logo {
+/* .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -105,10 +105,10 @@ header {
 
 .logo:hover {
   color: var(--accent-color);
-}
+} */
 
 /* Navigation */
-.main-nav {
+/* .main-nav {
   display: flex;
   align-items: center;
 }
@@ -119,16 +119,6 @@ header {
   line-height: 1.14;
   text-decoration: none;
   transition: color var(--animation);
-}
-
-.list {
-  list-style: none;
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  gap: 30px;
-  justify-content: center;
 }
 
 .list-contact {
@@ -224,10 +214,10 @@ h2 {
 
 .contact-icon {
   margin-right: 10px;
-}
+} */
 
 /* Hero */
-.section-hero {
+/* .section-hero {
   width: 1600px;
   text-align: center;
   margin: 0 auto;
@@ -251,9 +241,9 @@ h2 {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-}
+} */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -475,9 +465,9 @@ textarea {
   background-color: var(--background-color-btn);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: color:var(--animation), box-shadow: var(--animation), background-color: var(--animation);
-}
+} */
 
-.btn {
+/* .btn {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -499,9 +489,9 @@ textarea {
 
 .btn:focus {
   background-color: var(--background-color-btn);
-}
+} */
 
-.benefits-icon-list {
+/* .benefits-icon-list {
   list-style: none;
   display: flex;
   margin-top: 0;
@@ -563,9 +553,9 @@ textarea {
   display: block;
   box-sizing: border-box;
   flex-basis: calc((100% - 60px) / 3);
-}
+} */
 
-.section-activity {
+/* .section-activity {
   padding-top: 0;
 }
 
@@ -599,9 +589,10 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
+} */
 
-.contanier-tittle-subtittle {
+/* about */
+/* .contanier-tittle-subtittle {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -627,6 +618,16 @@ textarea {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 30px;
+  justify-content: center;
 }
 
 .subtitle {
@@ -691,9 +692,9 @@ textarea {
 .social-link:focus {
   background-color: var(--active-color);
   fill: var(--primary-white-color);
-}
+} */
 
-.tittle-subject-icon {
+/* .tittle-subject-icon {
   font-size: 36px;
   line-height: 1.16;
   margin-bottom: 50px;
@@ -741,7 +742,7 @@ textarea {
 .section-client {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* Footer */
 .container-footer {
@@ -947,7 +948,7 @@ textarea {
   align-items: center;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -958,7 +959,7 @@ textarea {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 /* Portfolio */
 .container {
