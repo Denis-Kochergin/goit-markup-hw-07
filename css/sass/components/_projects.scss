@@ -1,0 +1,111 @@
+.container-list-portfolio {
+  padding: 20px 24px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  border-color: var(--color-border-list);
+}
+
+.title-project {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.title-portfolio {
+  color: var(--tittle-text-color);
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+.list-portfolio {
+  list-style: none;
+}
+
+.list-nav-portfolio {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.text-work {
+  color: var(--second-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.list-nav-portfolio {
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.list-item-portfolio {
+  border-color: var(--color-border-list);
+  flex-basis: calc((100% - 60px) / 3);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  transition: box-shadow var(--animation);
+}
+
+.list-item-portfolio:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-item-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-description {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 101%;
+  padding: 63px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.overlay-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.list-item-portfolio:hover .overlay {
+  transform: translateY(0);
+  transition: transform var(--animation);
+}

@@ -2,6 +2,7 @@
 @import "./utils/vars";
 @import "./utils/visually-hidden";
 // Components
+// studio
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/hero-section";
@@ -10,6 +11,10 @@
 @import "./components/activity";
 @import "./components/about";
 @import "./components/client";
+@import "./components/footer";
+// portfolio
+@import "./components/nav-portfolio";
+@import "./components/projects";
 html {
   box-sizing: border-box;
 }
@@ -29,4 +34,20 @@ p {
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
 }
