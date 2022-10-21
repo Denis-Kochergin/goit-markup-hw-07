@@ -5,6 +5,19 @@
   border-left: solid 1px;
   border-color: var(--color-border-list);
 }
+.portfolio__title {
+  color: var(--tittle-text-color);
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+.portfolio__text {
+  color: var(--second-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
 
 .title-project {
   color: var(--primary-text-color);
@@ -14,67 +27,31 @@
   text-align: center;
 }
 
-.title-portfolio {
-  color: var(--tittle-text-color);
-  margin-bottom: 4px;
-  font-size: 18px;
-  line-height: 2;
-  text-align: left;
-}
-
-.list-portfolio {
-  list-style: none;
-}
-
-.list-nav-portfolio {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-.text-work {
-  color: var(--second-text-color);
-
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.list-portfolio {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
   margin: 0;
   margin-right: 30px;
+  list-style: none;
 }
 
-.list-nav-portfolio {
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 0;
-  padding-left: 0;
-}
-
-.list-item-portfolio {
+.portfolio__item {
   border-color: var(--color-border-list);
   flex-basis: calc((100% - 60px) / 3);
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
   transition: box-shadow var(--animation);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-.list-item-portfolio:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.list-item-portfolio:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.list-portfolio:nth-child(3n) {
+.portfolio__item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -97,7 +74,7 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.overlay-description {
+.overlay__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
@@ -105,7 +82,13 @@
   color: var(--primary-white-color);
 }
 
-.list-item-portfolio:hover .overlay {
+.portfolio__item:hover .overlay {
   transform: translateY(0);
   transition: transform var(--animation);
+}
+.nav-portfolio__list {
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-left: 0;
 }

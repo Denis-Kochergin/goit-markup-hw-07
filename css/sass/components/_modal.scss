@@ -30,7 +30,7 @@
   transition: opacity var(--animation), visibility var(--animation);
 }
 
-.btn-modal {
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -40,6 +40,11 @@
   border-radius: 50%;
   background-color: var(--primary-white-color);
   cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: var(--active-color);
+    transition: fill var(--animation);
+  }
 }
 
 .btn-modal:hover {
@@ -115,38 +120,37 @@
 //   fill: var(--active-color);
 // }
 
-.register-form-input {
+.register-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   padding-left: 42px;
+  &:hover {
+    border-color: var(--active-color);
+    transition: fill var(--animation), border-color var(--animation);
+  }
 }
 
-.register-form-input:hover ~ .register-form-icon {
+.register-form__input:hover ~ .register-form__icon {
   fill: var(--active-color);
   border-color: var(--active-color);
   transition: fill var(--animation), border-color var(--animation);
 }
 
-.register-form-field:focus-within > .register-form-icon {
+.register-form__field:focus-within > .register-form__icon {
   fill: var(--active-color);
   border-color: var(--active-color);
   transition: border-color var(--animation);
 }
 
-.register-form-input:hover {
-  border-color: var(--active-color);
-  transition: fill var(--animation), border-color var(--animation);
-}
-
-.register-form-input:focus-within {
+.register-form__input:focus-within {
   border-color: var(--active-color);
   transition: border-color var(--animation);
 }
 
-.register-form-icon {
+.register-form__icon {
   position: absolute;
   left: 3%;
   top: 50%;
@@ -162,7 +166,7 @@ textarea {
   outline: none;
 }
 
-.chekbox-svg {
+.chekbox__svg {
   display: inline-block;
   vertical-align: middle;
 }
@@ -183,7 +187,7 @@ textarea {
   color: var(--active-color);
 }
 
-.btn-register {
+.modal__btn {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
