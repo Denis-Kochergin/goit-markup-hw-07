@@ -305,23 +305,11 @@ h2 {
   transition: fill var(--animation);
 }
 
-.btn-modal:hover {
-  fill: var(--active-color);
-  -webkit-transition: fill var(--animation);
-  transition: fill var(--animation);
-}
-
-.btn-modal:focus {
-  fill: var(--active-color);
-  -webkit-transition: fill var(--animation);
-  transition: fill var(--animation);
-}
-
 .register-form {
   margin-bottom: 20px;
 }
 
-.register-form-tittle {
+.register-form__title {
   display: block;
   font-family: "Roboto";
   font-size: 20px;
@@ -333,31 +321,25 @@ h2 {
   margin-bottom: 30px;
 }
 
-.register-form-field {
+.register-form__field {
   display: block;
   margin: 0;
   text-align: left;
   position: relative;
   margin-bottom: 10px;
 }
-
-.register-form-field:last-of-type {
-  margin-bottom: 0;
-}
-
-.register-form-field:hover {
+.register-form__field:hover, .register-form__field:focus {
   border-color: var(--active-color);
   fill: var(--active-color);
   -webkit-transition: fill var(--animation), border-color var(--animation);
   transition: fill var(--animation), border-color var(--animation);
 }
 
-.register-form-field:focus {
-  border-color: var(--active-color);
-  fill: var(--active-color);
+.register-form__field:last-of-type {
+  margin-bottom: 0;
 }
 
-.register-form-label {
+.register-form__label {
   display: block;
   font-family: "Roboto";
   font-size: 12px;
@@ -367,12 +349,12 @@ h2 {
   margin-bottom: 4px;
 }
 
-.chekbox-agreement-form {
+.chekbox__agreement {
   display: inline-block;
   margin-bottom: 30px;
 }
 
-.register-form-chekbox {
+.chekbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -433,7 +415,7 @@ textarea {
   vertical-align: middle;
 }
 
-.register-form-description {
+.chekbox__description {
   color: var(--second-text-color);
   display: inline-block;
   -webkit-box-align: center;
@@ -447,11 +429,13 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.register-form-link {
+.chekbox__link {
   color: var(--active-color);
 }
 
-.modal__btn {
+.register__btn {
+  display: block;
+  margin: 0 auto;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -466,8 +450,7 @@ textarea {
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
 }
-
-.btn-register:hover {
+.register__btn:focus, .register__btn:hover {
   color: var(--primary-white-color);
   background-color: var(--background-color-btn);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -476,41 +459,6 @@ textarea {
   transition: color var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
   transition: color var(--animation), box-shadow var(--animation), background-color var(--animation);
   transition: color var(--animation), box-shadow var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
-}
-
-.btn-register:focus {
-  color: var(--primary-white-color);
-  background-color: var(--background-color-btn);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: color var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
-  transition: color var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
-  transition: color var(--animation), box-shadow var(--animation), background-color var(--animation);
-  transition: color var(--animation), box-shadow var(--animation), background-color var(--animation), -webkit-box-shadow var(--animation);
-}
-
-.btn {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  width: 216px;
-  padding: 10px 32px;
-  border: 0;
-  border-radius: 4px;
-  -webkit-transition: background-color var(--animation);
-  transition: background-color var(--animation);
-}
-
-.btn:hover {
-  background-color: var(--background-color-btn);
-}
-
-.btn:focus {
-  background-color: var(--background-color-btn);
 }
 
 .benefits__icon {

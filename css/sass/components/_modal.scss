@@ -47,21 +47,11 @@
   }
 }
 
-.btn-modal:hover {
-  fill: var(--active-color);
-  transition: fill var(--animation);
-}
-
-.btn-modal:focus {
-  fill: var(--active-color);
-  transition: fill var(--animation);
-}
-
 .register-form {
   margin-bottom: 20px;
 }
 
-.register-form-tittle {
+.register-form__title {
   display: block;
   font-family: "Roboto";
   font-size: 20px;
@@ -71,30 +61,24 @@
   margin-bottom: 30px;
 }
 
-.register-form-field {
+.register-form__field {
   display: block;
   margin: 0;
   text-align: left;
   position: relative;
   margin-bottom: 10px;
+  &:hover,
+  &:focus {
+    border-color: var(--active-color);
+    fill: var(--active-color);
+    transition: fill var(--animation), border-color var(--animation);
+  }
 }
-
-.register-form-field:last-of-type {
+.register-form__field:last-of-type {
   margin-bottom: 0;
 }
 
-.register-form-field:hover {
-  border-color: var(--active-color);
-  fill: var(--active-color);
-  transition: fill var(--animation), border-color var(--animation);
-}
-
-.register-form-field:focus {
-  border-color: var(--active-color);
-  fill: var(--active-color);
-}
-
-.register-form-label {
+.register-form__label {
   display: block;
   font-family: "Roboto";
   font-size: 12px;
@@ -104,21 +88,21 @@
   margin-bottom: 4px;
 }
 
-.chekbox-agreement-form {
+.chekbox__agreement {
   display: inline-block;
   margin-bottom: 30px;
 }
 
-.register-form-chekbox {
+.chekbox {
   appearance: none;
 }
 
-// .register-form-chekbox:checked + .chekbox-svg {
-//   background-color: var(--active-color);
-//   background-image: url(../images/icon\check\\(2\)\\(1\).svg);
-//   background-size: contain;
-//   fill: var(--active-color);
-// }
+.chekbox:checked + .chekbox__svg {
+  background-color: var(--active-color);
+  background-image: url(../images/icon\check\\(2\)\\(1\).svg);
+  background-size: contain;
+  fill var(--active-color);
+}
 
 .register-form__input {
   width: 100%;
@@ -171,7 +155,7 @@ textarea {
   vertical-align: middle;
 }
 
-.register-form-description {
+.chekbox__description {
   color: var(--second-text-color);
   display: inline-block;
   align-items: center;
@@ -183,11 +167,13 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-.register-form-link {
+.chekbox__link {
   color: var(--active-color);
 }
 
-.modal__btn {
+.register__btn {
+  display: block;
+  margin: 0 auto;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -200,43 +186,12 @@ textarea {
   border: 0;
   border-radius: 4px;
   transition: background-color var(--animation);
-}
-
-.btn-register:hover {
-  color: var(--primary-white-color);
-  background-color: var(--background-color-btn);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color var(--animation), box-shadow var(--animation),
-    background-color var(--animation);
-}
-
-.btn-register:focus {
-  color: var(--primary-white-color);
-  background-color: var(--background-color-btn);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color var(--animation), box-shadow var(--animation),
-    background-color var(--animation);
-}
-
-.btn {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  width: 216px;
-  padding: 10px 32px;
-  border: 0;
-  border-radius: 4px;
-  transition: background-color var(--animation);
-}
-
-.btn:hover {
-  background-color: var(--background-color-btn);
-}
-
-.btn:focus {
-  background-color: var(--background-color-btn);
+  &:focus,
+  &:hover {
+    color: var(--primary-white-color);
+    background-color: var(--background-color-btn);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color var(--animation), box-shadow var(--animation),
+      background-color var(--animation);
+  }
 }
