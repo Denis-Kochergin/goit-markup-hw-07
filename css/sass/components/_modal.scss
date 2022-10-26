@@ -97,12 +97,12 @@
   appearance: none;
 }
 
-.chekbox:checked + .chekbox__svg {
-  background-color: var(--active-color);
-  background-image: url(../images/icon\check\\(2\)\\(1\).svg);
-  background-size: contain;
-  fill var(--active-color);
-}
+// .chekbox:checked + .chekbox__svg {
+//   background-color: var(--active-color);
+//   background-image: url(../images/iconcheck\\(2\)\\(1\).svg);
+//   background-size: contain;
+//   fill: var(--active-color);
+// }
 
 .register-form__input {
   width: 100%;
